@@ -30,7 +30,7 @@ public class Elf extends Character{
     }        
 
     public void specialAtt() {
-        defense = defense / 2;
+        hp -= 15;
         int damage =(int)(strength * attRating - tom.getDefense());
         tom.lowerHP(damage * 3);
         return damage;
