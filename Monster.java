@@ -19,10 +19,15 @@ public class Monster extends Character {
 		return retStr;
 	}
 
+	
+
 	public void normalize()
 	{};
 	
 	public void specialize()
+	{};
+
+	public void specialAtt()
 	{};
 
 	
