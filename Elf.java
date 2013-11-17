@@ -1,7 +1,7 @@
 public class Elf extends Character{
     private String name;
 
-    public Warrior(String s) {
+    public Elf(String s) {
         name = s;
         hp = 125;
         strength = 110;
@@ -30,6 +30,10 @@ public class Elf extends Character{
     }        
 
     public void specialAtt() {
+        defense = defense / 2;
+        int damage =(int)(strength * attRating - tom.getDefense());
+        tom.lowerHP(damage * 3);
+        return damage;
         
     }
 
