@@ -33,6 +33,11 @@ public class Warrior extends Character {
 	attRating = 0.4;
     }	
 
+    public void specialAtt() {
+	
+    };
+
+    
 
 
 }
