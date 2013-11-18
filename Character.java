@@ -36,11 +36,11 @@ public abstract class Character {
 	}
 	
 	public static String about() {
-		return "The Warrior: Aragon - Hacks and Slashes\n" + 
-			"The Elf: Legolas - Shoots arrows\n" +
-			"The Dwarf: Gimile - Wields a huge axe\n" +
-			"The Wizard: Gandalf - Casts spells\n" +
-			"The Hobbit: Frodo - Small, scrawny, but quick and smart" ; 
+		return  "1: The Warrior: Aragon - Hacks and Slashes\n" + 
+			"2: The Elf: Legolas - Shoots arrows\n" +
+			"3: The Dwarf: Gimile - Wields a huge axe\n" +
+			"4: The Wizard: Gandalf - Casts spells\n" +
+			"5: The Hobbit: Frodo - Small, scrawny, but quick and smart" ; 
 	}
 
 }
