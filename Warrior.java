@@ -24,7 +24,7 @@ public class Warrior extends Character {
    
 
     public void specialize() {
-	defense -= 5;
+	defense -= 10;
 	attRating += 0.2;
     }	
 
@@ -33,11 +33,13 @@ public class Warrior extends Character {
 	attRating = 0.4;
     }	
 
-    public void specialAtt() {
-	
+    public int specialAtt(Character tom) {
+		int damage =(int)((strength * attRating * 3) - tom.getDefense());
+		tom.lowerHP(damage);
+		lowerHP(15);
+		System.out.println("You had a dose of epic and charged, causing mighty damage!! But you got fatigued!!!\n");
+		return damage;
     };
-
-    
 
 
 }
