@@ -58,7 +58,7 @@ public class YoRPG {
 	s += "\nChoose your difficulty: \n";
 	s += "\t1: Easy\n";
 	s += "\t2: Not so easy\n";
-	s += "\t3: Beowulf hath nothing on me. Bring it on.\n";
+	s += "\t3: Sauron hath nothing on me. Bring it on.\n";
 	s += "Selection: ";
 	System.out.print( s );
 
@@ -67,7 +67,7 @@ public class YoRPG {
 	}
 	catch ( IOException e ) { }
 
-	s = "Intrepid warrior, what doth thy call thyself? (State your name): ";
+	s = "Brave warrior of Middle-Earth, what doth thy call thyself? (State your name): ";
 	System.out.print( s );
 
 	try {
@@ -81,7 +81,7 @@ public class YoRPG {
 	t += "\t3:Dwarf\n";
 	t += "\t4:Wizard\n";
 	t += "\t5:Hobbit\n";
-	System.out.println(t);
+	System.out.println(pat.about());
 	
 	i = 1;
 	try {
