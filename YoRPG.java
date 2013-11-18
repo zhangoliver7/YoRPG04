@@ -146,14 +146,14 @@ public class YoRPG {
 		// ...but if you get hit, you take more damage.
 		try {
 		    System.out.println( "What shall you do?" );
-		    System.out.println( "\t1: Normal Attack!\n\t2: Increase ATT but Lower Def!\n\t3:SPECIAL ATTACK!!!" );
+		    System.out.println( "\t1: Normal Attack!\n\t2: Increase ATT but Lower Def!\n\t3:SPECIAL ATTACK!!!\n\t4:HEAL!");
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
 		
 		if (i ==4)
-		    pat.getHP() += 10;
-		    System.out.println( "You dealt  a total of 0  points of damage, but you have healed" + 10 + "HP.");
+		    pat.lowerHP(-10);
+		System.out.println( "You dealt  a total of 0  points of damage, but you have healed" + " " + 10 + " " + "HP.");
 		if (i == 3)
 			d1 = pat.specialAtt (smaug);
 
