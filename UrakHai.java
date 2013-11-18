@@ -1,13 +1,15 @@
-public class Monster extends Character {
+public class Urakhai extends Character {
 
 
-        public Monster() {
-                int random = (int)(Math.random() * 45);
-                random += 20;
-                strength = random + 15;
-                hp = 150;        
-                defense = 10;        
-                attRating = 1.0;
+        public Urakhai() {
+                int randomStr = (int)(Math.random() * 45);
+		int randomDef = (int)(Math.random() * 20);
+		int randomHP = (int)(Math.random() * 100);
+		randomStr += 20;
+		strength = randomStr;
+		hp = randomHP + 70;	
+		defense = randomDef;	
+		attRating = 1.0;
         }
 
         public String toString() {
@@ -23,11 +25,8 @@ public class Monster extends Character {
         public void specialize()
         {};
 
-        public void specialAtt() {
-                hp -= 20;
-                int damage =(int)(strength * attRating - tom.getDefense());
-                tom.lowerHP(damage * 3);
-                return damage;
+        public int specialAtt(Character tom) {
+             return 0;
         
         }
         
@@ -35,4 +34,3 @@ public class Monster extends Character {
 
    
 
-}
