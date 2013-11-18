@@ -29,11 +29,12 @@ public class Dwarf extends Character{
         attRating = 0.4;
     }        
 
-    public void specialAtt() {
+    public int specialAtt(Character tom) {
         hp -= 10;
         int damage =(int)(strength * attRating - tom.getDefense());
+	System.out.println("You swang your mighty axe with all your strength!");
         tom.lowerHP(damage * 2);
-        return damage;
+        return damage * 2;
         
     }
 
