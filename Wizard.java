@@ -20,7 +20,7 @@ public class Wizard extends Character{
    
 
     public void specialize() {
-        defense -= 5;
+        defense -= 15;
         attRating += 0.2;
     }        
 
@@ -29,11 +29,12 @@ public class Wizard extends Character{
         attRating = 0.4;
     }        
 
-    public void specialAtt() {
+    public int specialAtt(Character tom) {
         hp -= 25;
         int damage =(int)(strength * attRating - tom.getDefense());
+	System.out.println("YOU SHALL NOT PASS!");
         tom.lowerHP(damage * 4);
-        return damage;
+        return damage * 4;
         
     }
 
