@@ -29,11 +29,12 @@ public class Elf extends Character{
         attRating = 0.4;
     }        
 
-    public void specialAtt() {
+    public int specialAtt(Character tom) {
         hp -= 15;
         int damage =(int)(strength * attRating - tom.getDefense());
+	System.out.println("You shot 3 arrows, each doing " + damage + " points of damage, but now you are fatigued");
         tom.lowerHP(damage * 3);
-        return damage;
+        return damage * 3;
         
     }
 
