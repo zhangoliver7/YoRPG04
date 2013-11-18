@@ -8,7 +8,7 @@ public abstract class Character {
 	
 	public abstract void normalize();
 	public abstract void specialize();
-	public abstract void specialAtt();
+	public abstract int specialAtt(Character tom);
 
 	public boolean isAlive() {
 		return hp > 0;
@@ -18,8 +18,11 @@ public abstract class Character {
 		return defense;
 	}
 
-	public int getStrength() {
-		return strength;
+	public int getHP() {
+		if (hp > 0) 
+			return hp;
+		else 
+			return 0;
 	}
 
 	public void lowerHP(int x) {
