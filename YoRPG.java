@@ -150,7 +150,10 @@ public class YoRPG {
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
-	
+		
+		if (i ==4)
+		    pat.getHP() += 10;
+		    System.out.println( "You dealt  a total of 0  points of damage, but you have healed" + 10 + "HP.");
 		if (i == 3)
 			d1 = pat.specialAtt (smaug);
 
