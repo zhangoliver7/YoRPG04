@@ -6,11 +6,13 @@ public class Monster extends Character {
 
 
 	public Monster() {
-		int random = (int)(Math.random() * 45);
-		random += 20;
-		strength = random;
-		hp = 150;	
-		defense = 20;	
+		int randomStr = (int)(Math.random() * 45);
+		int randomDef = (int)(Math.random() * 20);
+		int randomHP = (int)(Math.random() * 100);
+		randomStr += 20;
+		strength = randomStr;
+		hp = randomHP + 50;	
+		defense = randomDef;	
 		attRating = 1.0;
 	}
 
@@ -27,8 +29,8 @@ public class Monster extends Character {
 	public void specialize()
 	{};
 
-	public void specialAtt()
-	{};
+	public int specialAtt(Character Tom)
+	{return 0;};
 
 	
 }
